@@ -11,7 +11,7 @@ import { CreaturesService } from './creatures.service';
 import { CreateCreatureDto } from './dto/create-creature.dto';
 import { UpdateCreatureDto } from './dto/update-creature.dto';
 
-@Controller('creatures/extinct')
+@Controller('creatures')
 export class CreaturesController {
   constructor(private readonly creaturesService: CreaturesService) {}
 
@@ -20,12 +20,12 @@ export class CreaturesController {
     return this.creaturesService.create(createCreatureDto);
   }
 
-  @Get()
+  @Get('noExtincts')
   findAll() {
     return this.creaturesService.findAll();
   }
 
-  @Get()
+  @Get('extincts')
   findAllExtincts() {
     return this.creaturesService.findAllExtincts();
   }

@@ -26,7 +26,7 @@ async function main() {
         'leave its grave at night to drink the blood of the living by biting their necks with long pointed canine teeth.',
       lastSee: 'Calderon Park',
       countLastSee: 5,
-      extinct: false,
+      extinct: true,
     },
   });
 
