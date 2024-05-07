@@ -26,7 +26,7 @@ export class CreaturesService {
   update(id: number, updateCreatureDto: UpdateCreatureDto) {
     return this.prisma.creature.update({
       where: { id },
-      data: UpdateCreatureDto,
+      data: updateCreatureDto,
     });
   }
   remove(id: number) {
